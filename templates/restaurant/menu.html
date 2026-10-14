@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Aura Bistro</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; background-color: #f8f9fa;">
+
+    {% include 'restaurant/partials/header.html' %}
+
+    <div style="max-width: 1000px; margin: 3rem auto; padding: 0 1rem;">
+        <h1 style="text-align: center; color: #1a1a1a; margin-bottom: 2rem;">Our Exquisite Menu</h1>
+
+        <h2 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 0.5rem;">Starters</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0 3rem 0;">
+            <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 0.5rem 0; display: flex; justify-content: space-between;">Garlic Butter Shrimp <span>$12.99</span></h3>
+                <p style="color: #666; margin: 0;">Pan-seared succulent shrimp in rich garlic butter and herbs.</p>
+            </div>
+            <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 0.5rem 0; display: flex; justify-content: space-between;">Bruschetta <span>$8.50</span></h3>
+                <p style="color: #666; margin: 0;">Grilled artisan bread rubbed with garlic and topped with fresh tomatoes and olive oil.</p>
+            </div>
+        </div>
+
+        <h2 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 0.5rem;">Main Courses</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0 3rem 0;">
+            <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 0.5rem 0; display: flex; justify-content: space-between;">Ribeye Steak <span>$29.50</span></h3>
+                <p style="color: #666; margin: 0;">12oz aged premium ribeye served with crispy truffle fries.</p>
+            </div>
+            <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 0.5rem 0; display: flex; justify-content: space-between;">Grilled Salmon <span>$24.00</span></h3>
+                <p style="color: #666; margin: 0;">Fresh Atlantic salmon fillet served with seasonal roasted vegetables.</p>
+            </div>
+        </div>
+    </div>
+
+    {% include 'restaurant/partials/footer.html' %}
+
+</body>
+</html>
