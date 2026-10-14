@@ -19,3 +19,6 @@ def reservation(request):
 
 def contact(request):
     return render(request, 'restaurant/contact.html')
+
+def gallery(request):
+    return render(request, 'restaurant/gallery.html')

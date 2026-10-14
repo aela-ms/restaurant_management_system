@@ -1,22 +1,43 @@
-<footer style="background-color: #1a1a1a; color: #ccc; text-align: center; padding: 2rem 1rem; margin-top: 3rem;">
-    <!-- Include Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+{% load static %}
+<footer class="bg-gray-900 text-white py-12 mt-16 border-t border-gray-700 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-    <!-- Social Media Links -->
-    <div style="margin-bottom: 1rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.5rem;">
-        <a href="https://facebook.com" target="_blank" style="color: #ccc; text-decoration: none;" title="Facebook">
-            <i class="bi bi-facebook"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank" style="color: #ccc; text-decoration: none;" title="Instagram">
-            <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank" style="color: #ccc; text-decoration: none;" title="Twitter / X">
-            <i class="bi bi-twitter-x"></i>
-        </a>
-        <a href="https://tripadvisor.com" target="_blank" style="color: #ccc; text-decoration: none;" title="TripAdvisor">
-            <i class="bi bi-tripadvisor"></i>
-        </a>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p class="text-gray-300 flex items-center gap-2 mb-2">
+          <i class="bi bi-geo-alt-fill text-yellow-400"></i> KN 123 ST 4, Kigali City
+        </p>
+        <p class="text-gray-300 flex items-center gap-2 mb-2">
+          <i class="bi bi-telephone-fill text-yellow-400"></i> +250 734 567 890
+        </p>
+        <p class="text-gray-300 flex items-center gap-2">
+          <i class="bi bi-envelope-fill text-yellow-400"></i> info@craveandco.com
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="{% url 'home' %}" class="hover:text-yellow-400 transition">Home</a></li>
+          <li><a href="{% url 'menu' %}" class="hover:text-yellow-400 transition">Menu</a></li>
+          <li><a href="{% url 'reservations' %}" class="hover:text-yellow-400 transition">Reservations</a></li>
+          <li><a href="{% url 'contact' %}" class="hover:text-yellow-400 transition">Contact Us</a></li>
+          <li><a href="{% url 'gallery' %}" class="hover:text-yellow-400 transition">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+        <div class="flex gap-4 text-2xl text-yellow-400">
+          <i class="bi bi-facebook hover:text-white transition cursor-pointer"></i>
+          <i class="bi bi-instagram hover:text-white transition cursor-pointer"></i>
+          <i class="bi bi-twitter hover:text-white transition cursor-pointer"></i>
+        </div>
+      </div>
+
     </div>
 
-    <p>&copy; 2026 Aura Bistro. All rights reserved. | Crafted with Django</p>
+    <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+      &copy; 2026 Crave & Co. All rights reserved.
+    </div>
 </footer>
