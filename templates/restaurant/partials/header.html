@@ -1,6 +1,5 @@
 {% load static %}
 <nav class="fixed top-0 w-full bg-black/70 backdrop-blur-md text-white z-50">
-    <!-- py-6 for increased height; justify-center + container centering brings everything towards the middle -->
     <div class="max-w-7xl mx-auto flex items-center justify-between px-12 py-6">
       
       <!-- Logo Section -->
@@ -10,24 +9,24 @@
       </a>
 
       <!-- Navigation Links -->
-      <div class="hidden md:flex gap-6">
-        <a href="{% url 'home' %}" class="flex items-center gap-2 font-semibold hover:text-yellow-400 transition">
-          <i class="bi bi-house-door-fill"></i> Home
+      <div class="hidden md:flex gap-8">
+        <a href="{% url 'home' %}" class="relative font-semibold hover:text-yellow-400 transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-yellow-400 hover:after:w-full after:transition-all after:duration-300 ease-in-out">
+          Home
         </a>
-        <a href="{% url 'menu' %}" class="flex items-center gap-2 font-semibold hover:text-yellow-400 transition">
-          <i class="bi bi-list-ul"></i> Menu
+        <a href="{% url 'menu' %}" class="relative font-semibold hover:text-yellow-400 transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-yellow-400 hover:after:w-full after:transition-all after:duration-300 ease-in-out">
+          Menu
         </a>
-        <a href="{% url 'about' %}" class="flex items-center gap-2 font-semibold hover:text-yellow-400 transition">
-          <i class="bi bi-info-circle-fill"></i> About Us
+        <a href="{% url 'about' %}" class="relative font-semibold hover:text-yellow-400 transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-yellow-400 hover:after:w-full after:transition-all after:duration-300 ease-in-out">
+          About Us
         </a>
-        <a href="{% url 'reservations' %}" class="flex items-center gap-2 font-semibold hover:text-yellow-400 transition">
-          <i class="bi bi-calendar-check-fill"></i> Reservations
+        <a href="{% url 'reservations' %}" class="relative font-semibold hover:text-yellow-400 transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-yellow-400 hover:after:w-full after:transition-all after:duration-300 ease-in-out">
+          Reservations
         </a>
-        <a href="{% url 'contact' %}" class="flex items-center gap-2 font-semibold hover:text-yellow-400 transition">
-          <i class="bi bi-envelope-fill"></i> Contact Us
+        <a href="{% url 'contact' %}" class="relative font-semibold hover:text-yellow-400 transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-yellow-400 hover:after:w-full after:transition-all after:duration-300 ease-in-out">
+          Contact Us
         </a>
-        <a href="{% url 'gallery' %}" class="flex items-center gap-2 font-semibold hover:text-yellow-400 transition">
-          <i class="bi bi-images"></i> Gallery
+        <a href="{% url 'gallery' %}" class="relative font-semibold hover:text-yellow-400 transition-colors duration-300 after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[2px] after:bg-yellow-400 hover:after:w-full after:transition-all after:duration-300 ease-in-out">
+          Gallery
         </a>
       </div>
 
